@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  padding-top: 70px; /* Add top padding to avoid content overlap with navbar */
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: rgba(30, 136, 229, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 1s ease, opacity 1s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navbar-container.visible {
+  background-color: rgba(43, 62, 79, 0.9);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.App-header {
+  background: linear-gradient(to bottom right, #e1f5fe, #b3e5fc);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #0d47a1;
+}
+
+.App-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
