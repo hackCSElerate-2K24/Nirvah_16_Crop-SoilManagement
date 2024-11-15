@@ -29,8 +29,7 @@
   gap: 30px;
 }
 
-.nav-item a,
-.nav-item .disabled-link {
+.nav-item a {
   text-decoration: none;
   color: #ffffff;
   font-size: 18px;
@@ -38,15 +37,7 @@
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Disabled link styling */
-.disabled-link {
-  cursor: not-allowed;
-  color: #ffffff;
-  opacity: 0.6;
-}
-
-.nav-item a:hover,
-.nav-item .disabled-link:hover {
+.nav-item a:hover {
   color: #ffcc80;
   transform: scale(1.1);
 }

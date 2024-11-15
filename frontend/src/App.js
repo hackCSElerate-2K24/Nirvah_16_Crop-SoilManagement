@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
+import WeatherPage from './pages/WeatherPage';
 import './App.css';
 
 function App() {
@@ -15,9 +16,9 @@ function App() {
   return (
     <Router>
       <div>
-        {showNavbar && <div className="navbar-container visible">Navbar Content Here</div>}
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/weather" element={<WeatherPage />} />
         </Routes>
       </div>
     </Router>
